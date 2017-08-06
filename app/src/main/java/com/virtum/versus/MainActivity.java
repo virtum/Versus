@@ -15,12 +15,7 @@ public class MainActivity extends Activity {
     }
 
     public void onClickCreate(View view) {
-        final TextView testView = findViewById(R.id.test_view);
-        testView.setText("Create!");
-
-        String messageText = testView.getText().toString();
         Intent intent = new Intent(this, CreateTopicActivity.class);
-        intent.putExtra(CreateTopicActivity.EXTRA_MESSAGE, messageText);
         startActivity(intent);
     }
 

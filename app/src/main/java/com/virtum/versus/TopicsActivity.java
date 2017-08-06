@@ -10,7 +10,7 @@ import java.util.List;
 
 public class TopicsActivity extends Activity {
 
-    List<String> titles = Arrays.asList("1", "2", "3");
+    public List<String> titles = Arrays.asList("1", "2", "3");
 
     private ListView lv;
 
