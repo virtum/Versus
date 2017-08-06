@@ -1,21 +1,30 @@
 package com.virtum.versus;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class TopicsActivity extends Activity {
-    public static final String EXTRA_MESSAGE = "message";
+
+    List<String> titles = Arrays.asList("1", "2", "3");
+
+    private ListView lv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topics);
 
-        Intent intent = getIntent();
-        String messageText = intent.getStringExtra(EXTRA_MESSAGE);
-        TextView messageView = findViewById(R.id.message);
-        messageView.setText(messageText);
+        lv = findViewById(R.id.list_options);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_list_item_1,
+                titles);
+
+        lv.setAdapter(arrayAdapter);
     }
 }
