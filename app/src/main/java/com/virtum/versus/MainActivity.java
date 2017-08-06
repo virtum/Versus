@@ -27,5 +27,10 @@ public class MainActivity extends Activity {
     public void onClickTopics(View view) {
         final TextView testView = findViewById(R.id.test_view);
         testView.setText("Topics!");
+
+        String messageText = testView.getText().toString();
+        Intent intent = new Intent(this, TopicsActivity.class);
+        intent.putExtra(TopicsActivity.EXTRA_MESSAGE, messageText);
+        startActivity(intent);
     }
 }
