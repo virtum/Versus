@@ -15,6 +15,11 @@ public class MainActivity extends Activity {
 
     public void onClickCreate(View view) {
         final TextView testView = findViewById(R.id.test_view);
-        testView.setText("Clicked!");
+        testView.setText("Create!");
+    }
+
+    public void onClickTopics(View view) {
+        final TextView testView = findViewById(R.id.test_view);
+        testView.setText("Topics!");
     }
 }

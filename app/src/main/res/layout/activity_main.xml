@@ -24,4 +24,14 @@
         android:onClick="onClickCreate"
         android:text="@string/create" />
 
+    <Button
+        android:id="@+id/topics_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickTopics"
+        android:text="@string/topics" />
+
 </RelativeLayout>

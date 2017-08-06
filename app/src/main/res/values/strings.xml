@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Versus</string>
     <string name="create">Dodaj temat</string>
-    <string name="start">Start</string>
+    <string name="topics">Tematy</string>
 </resources>
