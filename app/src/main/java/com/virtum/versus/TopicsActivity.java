@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class TopicsActivity extends Activity {
 
-    public List<String> titles = Arrays.asList("1", "2", "3");
+    public static List<String> titles = new ArrayList<>();
+    public static HashMap<String, TopicModel> topics = new HashMap<>();
 
     private ListView lv;
 
