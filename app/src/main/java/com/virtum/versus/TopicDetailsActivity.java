@@ -15,10 +15,10 @@ public class TopicDetailsActivity extends Activity {
         Intent intent = getIntent();
         TopicModel newTopic = (TopicModel) intent.getSerializableExtra("newTopic");
 
-        final TextView title = findViewById(R.id.title_view);
+        final TextView title = (TextView) findViewById(R.id.title_view);
         title.setText(newTopic.getTitle());
 
-        final TextView description = findViewById(R.id.description_view);
+        final TextView description = (TextView) findViewById(R.id.description_view);
         description.setText(newTopic.getDescription());
     }
 }

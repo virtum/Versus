@@ -25,13 +25,11 @@ public class TopicsActivity extends Activity {
         setContentView(R.layout.activity_topics);
 
 
-        lv = findViewById(R.id.list_options);
+        lv = (ListView) findViewById(R.id.list_options);
         lv.setTextFilterEnabled(true);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-
-
                 Intent intent = new Intent(TopicsActivity.this,
                         TopicDetailsActivity.class);
                 intent.putExtra("newTopic", topics.get(titles.get(position)));

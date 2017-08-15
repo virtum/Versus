@@ -15,8 +15,8 @@ public class CreateTopicActivity extends Activity {
     }
 
     public void onClickCreateTopic(View view) {
-        final EditText titleText = findViewById(R.id.title);
-        final EditText descriptionView = findViewById(R.id.description);
+        final EditText titleText = (EditText) findViewById(R.id.title);
+        final EditText descriptionView = (EditText) findViewById(R.id.description);
 
         String title = titleText.getText().toString();
         String description = descriptionView.getText().toString();

@@ -3,4 +3,5 @@
     <string name="create">Dodaj temat</string>
     <string name="topics">Tematy</string>
     <string name="createTopic">Utwórz</string>
+    <string name="connect">Connect</string>
 </resources>

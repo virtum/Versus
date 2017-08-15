@@ -40,4 +40,14 @@
         android:onClick="onClickTopics"
         android:text="@string/topics" />
 
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topics_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="onConnect"
+        android:text="@string/connect" />
+
 </RelativeLayout>
